@@ -1,0 +1,159 @@
+@font-face {
+    font-family: PlusJakartaSans;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(210, 60%, 98%);
+    font-family: PlusJakartaSans;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 800px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.content {
+    padding: 25px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.title {
+    display: flex;
+}
+
+.title_text {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.title-notification_number{
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 30px;
+}
+
+.mark_as_read_btn {
+    text-align: right;
+    /* padding-top: 8px; */
+}
+
+.mark_as_read {
+    text-align: right;
+    color: gray;
+    /* padding-top: 8px; */
+}
+
+.notifications_container {
+    margin-top: 20px;
+}
+
+.notification {
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.notification_grid {
+    display: grid;
+    height: 85px;
+    grid-template-columns: 100px auto;
+
+}
+
+.unread {
+    background-color: hsl(211, 68%, 94%);
+}
+
+.user_profile_icon-img {
+    transform: scale(0.6);
+}
+
+.notification_content {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 15px;
+}
+
+.notification_username {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.notification_status {
+    color: hsl(1, 90%, 64%);
+    max-height: 19px;
+}
+
+.notification_date {
+    margin-top: 5px;
+    font-size: 14px;
+    color: hsl(219, 14%, 63%);
+}
+
+.notification_message_content{
+    border: 1px hsl(206, 10%, 73%) solid;
+    background-color: white;
+    margin-left: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-size: 15px;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.notification_message_content:hover {
+    background-color: hsl(228, 26%, 62%);
+}
+
+.group {
+    font-weight: 700;
+    color: hsl(228, 45%, 44%);
+    cursor: pointer;
+}
+
+.post {
+    font-weight: 700;
+    color: hsl(210, 1%, 43%);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        border-radius: 0;
+        box-shadow: none;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+    }
+
+    .notification_grid {
+        height: auto;
+    }
+    .notification_message_content{
+        height: auto;
+    }
+}
