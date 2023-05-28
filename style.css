@@ -81,8 +81,11 @@ body {
 }
 
 .notification_related_picture {
-    transform: scale(0.7);
     text-align: right;
+}
+
+.related_img {
+    transform: scale(0.7);
 }
 
 .unread {
