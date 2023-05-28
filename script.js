@@ -4,7 +4,7 @@ const notifications_count = document.querySelector('.title-notification_number')
 
 const markAsRead = (notification) => {
     notification.setAttribute('class', 'notification');
-    notification.querySelector('.notification_status').innerHTML = "";
+    notification.querySelector('.notification_status').textContent = "";
     checkUnreadMessages();
 };
 
@@ -30,7 +30,7 @@ const checkUnreadMessages = () => {
         markAsReadBtn.removeEventListener('click', markAllAsRead)
         notifications_count.style.visibility = 'hidden';
     }
-    notifications_count.innerHTML = unreadMessages.length
+    notifications_count.textContent = unreadMessages.length
 }
 
 //first of all check if there are any unread messages to switch on the button
