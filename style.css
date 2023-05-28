@@ -76,8 +76,13 @@ body {
 .notification_grid {
     display: grid;
     height: 85px;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 100px auto 1fr;
+    position: relative;
+}
 
+.notification_related_picture {
+    transform: scale(0.7);
+    text-align: right;
 }
 
 .unread {
