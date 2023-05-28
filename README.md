@@ -23,7 +23,7 @@ The challenge concerned building out this notifications page and getting it look
 
 ### Links
 
-Solution URL: 
+Solution URL: https://rafalbodanka.github.io/notifications-page/
 
 ## My process
 
